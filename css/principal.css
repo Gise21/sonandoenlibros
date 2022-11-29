@@ -295,6 +295,22 @@ article img {
   margin-top: 20px;
 }
 
+article u {
+  text-decoration: underline;
+  color: #3EA055;
+  font-size: 20px;
+}
+
+article ul {
+  list-style: circle;
+  margin-top: 10px;
+  margin-left: 8%;
+}
+
+article ul li {
+  margin-top: 10px;
+}
+
 /* Aside */
 
 .container-aside aside  {
@@ -331,6 +347,11 @@ article img {
 
 .container-aside aside button:hover {
   opacity: 0.9;
+}
+
+.container-aside u {
+  text-decoration: underline;
+  color: #728C00;
 }
 
 /* Footer */
@@ -417,7 +438,7 @@ article img {
   }
 
   .move-container-all  {
-    transform: translateX(300px);
+    transform: translateX(270px);
   }
 
   .menu {
@@ -426,7 +447,7 @@ article img {
     position: fixed;
     top: 80px;
     left: 0;
-    background: #fff;
+    background: #FCDFFF;
     overflow: hidden;
     transform: translateX(-350px);
     box-shadow: 10px 0 20px -25px black;
@@ -434,7 +455,7 @@ article img {
   }
 
   .show-lateral {
-    width: 300px;
+    width: 270px;
     transform: translateX(0px);
   }
 
