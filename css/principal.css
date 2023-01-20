@@ -2,7 +2,14 @@
 
 :root {
 	--border-color: linear-gradient(to right, tomato 0%, gold 100%);
+  --border-color2: linear-gradient(100deg, var(--tomato) 25%, var(--gold)50%, var(--tomato)75%);
 	--card-color: #222;
+
+  --violet: rgb(161, 132, 240);
+  --turquoise: #2fdabd;
+
+  --tomato: rgb(255, 99, 71);
+  --gold:rgb(255, 215, 0);
 }
 
 html  {
@@ -209,7 +216,7 @@ header {
   height: 500px;
   position: relative;
   margin-top: 80px;
-  background-image: url(../img/Biblioteca/manga.jpg!d);
+  background-image: url(../img/Biblioteca/manga.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -682,10 +689,13 @@ section .buscador {
 }
 
 .card-3 {
-	background: var(--border-color);
+  animation: gradient 30s linear infinite;
+  /*background: linear-gradient(100deg, var(--violet) 25%, var(--turquoise) 50%, var(--violet) 75%);*/
+  background-repeat: repeat;
+	background: var(--border-color2);
 	aspect-ratio: 10/16;
-	width: 225px;
-	padding: 5px;
+	width: 200px;
+	padding: 8px;
 	border-radius: 16px;
 	position: relative;
   float: left;
@@ -709,5 +719,52 @@ section .buscador {
   height: 100%;
   border-radius: 8px;
   display: flex;
-  margin-bottom: 9%;
+  margin-bottom: 11%;
 }
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: -80rem 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/* BREADCRUMBS */
+
+.breadcrumbs {
+	padding: 10px;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+.breadcrumbs__item {
+	display: inline-block;
+}
+
+.breadcrumbs__item:not(:last-of-type)::after {
+	content: "\203a";
+	margin: 0px 5px;
+	color: #463a3a;
+	-webkit-text-stroke: 1px #463a3a;
+}
+
+.breadcrumbs__link {
+	text-decoration: none;
+	color: #696161;
+}
+
+.breadcrumbs__link:hover {
+	text-decoration: underline;
+}
+
+.breadcrumbs__link--active {
+	color: #95007c;
+	font-weight: 600;
+}
+
+/* / BREADCRUMBS */
