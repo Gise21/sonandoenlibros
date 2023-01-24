@@ -738,6 +738,8 @@ section .buscador {
 /* BREADCRUMBS */
 
 .breadcrumbs {
+  margin-left: 5%;
+  position: absolute;
 	padding: 10px;
 	font-family: "Source Sans Pro", sans-serif;
 }
