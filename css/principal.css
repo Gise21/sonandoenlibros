@@ -205,7 +205,7 @@ header {
   height: 500px;
   position: relative;
   margin-top: 80px;
-  background-image: url(../img/Biblioteca/romance.webp);
+  background-image: url(../img/Biblioteca/romance.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -587,7 +587,7 @@ article ul li {
 .content-carrousel{
   width: 100%;
   position: absolute;
-  animation: rotar 10s infinite linear;
+  animation: rotar 15s infinite linear;
   transform-style: preserve-3d;
 }
 
@@ -694,7 +694,7 @@ section .buscador {
   background-repeat: repeat;
 	background: var(--border-color2);
 	aspect-ratio: 10/16;
-	width: 200px;
+	width: 150px;
 	padding: 8px;
 	border-radius: 16px;
 	position: relative;
@@ -719,7 +719,7 @@ section .buscador {
   height: 100%;
   border-radius: 8px;
   display: flex;
-  margin-bottom: 11%;
+  margin-bottom: 15%;
 }
 
 @keyframes gradient {
