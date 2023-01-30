@@ -309,7 +309,7 @@ header {
 .container-info-cover h1 {
   font-size: 70px;
   font-weight: 500;
-  color: blue;
+  color: rgb(15, 15, 153);
   margin-bottom: 20px;
 }
 
@@ -317,6 +317,7 @@ header {
   color: #080808;
   font-size: 30px;
   font-weight: 300;
+  text-shadow: 2px 2px 2px white;
 }
 
 /* Contenedor - contenido del articulo */
