@@ -360,6 +360,10 @@ article h2 {
   margin-top: 5px;
 }
 
+article h3 {
+  color: blue;
+}
+
 article p {
   margin-top: 15px;
   font-size: 18px;
@@ -379,6 +383,14 @@ article ul {
 
 article ul li {
   margin-top: 10px;
+}
+
+.tituloB {
+  text-align: center;
+  color: #b20773;
+  font-size: 50px;
+  -webkit-text-stroke: 1px #463a3a;
+  text-shadow: 1px 1px 2px #000;
 }
 
 /* Aside */
